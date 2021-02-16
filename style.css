@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+html {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+body {
+    background: url('/images/turtle.jpg')
+}
+nav, section, footer {
+    /* width: 95%; */
+}
+
+
+img {
+    width: 400px;
+}
+nav, #welcomeDiv, #about-me, .projectsFlex, footer, #contact{
+    /* text-align: center; */
+}
+#about-me, .projectsFlex, .social-list  {
+    /* margin: auto; */
+}
+#initLogo {
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: -.7rem;
+    margin-left: .25rem;
+    
+}
+#contact a, 
+footer a {
+    color: black;
+}
+
+/* .fauxFooter {
+    border: 1px solid green;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Going to restart css using BS */
+/* body {
+    max-width: 700px;
+    background-color: #EA8C55;
+    margin: 0 auto;
+    color: #EA8C55;
+}
+
+#navbar {
+    background-color: #81171B;
+    text-align: right;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    max-width: 700px;
+}
+
+#navbar li {
+    display: inline-block;
+    text-align:right;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+#navbar a {
+    color: #EA8C55;
+    text-decoration: none;
+    transition: color 0.7s;
+}
+
+#navbar a:hover {
+    color: #F6CEB6;
+}
+
+h1, h2 {
+    color: #540804;
+    font-family: 'Lemonada', cursive;
+}
+
+#welcome-section {
+    background: url(images/brickpavement.jpg);
+    background-attachment: fixed;
+    background-color: #a0522d;
+    background-blend-mode: multiply;
+    color: #EA8C55;
+    height: 100vh;
+    padding: 1rem;  
+    position: relative;
+    top: 1.6rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    max-width: calc(700px - 2rem);
+}
+
+#welcome-section h1 {
+    color: #EA8C55;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#welcome-section p {
+    color: #EA8C55;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+#about-me h2 { color:#F6CEB6; }
+#about-me {
+    background-color: #81171B/*#C75146*/;
+    /* line-height: 1.5rem;
+    padding: 1rem;
+    color: #F6CEB6/*#540804*/;/*
+    position: relative;
+}
+
+#about-me p {
+    margin-top: 1rem;
+}
+
+p::first-letter {
+    font-size: 1.5rem;
+}
+
+#projects {
+    
+    /* background-color: #AD2E24; *//*
+    background: url(images/brickpavement.jpg);
+    background-attachment: fixed;
+    background-color: #a0522d;
+    background-blend-mode: multiply;
+    color: #EA8C55;
+    padding: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+#projects h2 {
+    color: #EA8C55;
+}
+
+#projects p {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.project-tile img {
+    border-radius: 0.5rem;
+    width: 90%;
+    margin-bottom: 2rem;
+    box-shadow: .3rem .6rem .5rem .5rem #661A15;
+}
+
+.projectsFlex { 
+    visibility: hidden; 
+}
+/* Prevents :hover from triggering in the gaps between items */
+/*
+.projectsFlex > * { 
+    visibility: visible; 
+}
+/* Brings the child items back in, even though the parent is `hidden` */
+/*
+.projectsFlex  > * { 
+    transition: opacity 150ms linear 100ms, transform 200ms ease-in-out 200ms; 
+}
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+/*
+.projectsFlex:hover > * { 
+    opacity: 0.4; 
+    transform: scale(0.9); 
+}
+/* Fade out all items when the parent is hovered */
+/*
+.projectsFlex  > *:hover { 
+    opacity: 1; 
+    transform: scale(1); 
+    transition-delay: 0ms, 0ms; 
+}
+
+.orange:hover { 
+    color: black;
+    background-color: white; /* only this works...*/
+    /* text-decoration: underline; *//*
+} /* Not working */
+/*
+#contact {
+    line-height: 1.5rem;
+    background-color: #81171B;
+    color: #F6CEB6;
+    padding: 1rem;
+    position: relative;
+}
+
+#contact h2 {
+    color: #F6CEB6;
+}
+
+#contact a {
+    color: #F6CEB6;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact p {
+    color: #F6CEB6;
+    margin: 1rem 0;
+}
+
+#contact ul {
+    text-align: center;
+    
+}
+
+#contact li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 2rem;
+    margin-right: 0.5rem;
+    color: #F6CEB6;
+}
+    
+.grow {
+        transition: all .2s ease-in-out;
+}
+.grow:hover {
+        transform: scale(1.5);
+}
+
+.fauxFooter {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #F6CEB6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    border-top: 1px solid #F6CEB6;;
+}
+
+
+h6, span {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #F6CEB6;;
+    font-weight: 400;
+}
+
+/*Media query below is for small phone screen.*//*
+@media screen and (max-width: 400px) {
+#welcome-section h1 {
+        font-size: 3rem;
+    } 
+    body, section {
+        max-width: calc(99% - 1rem);
+    }
+    #navbar {
+        max-width: 99%;
+    }
+    #navbar li {
+        padding-right: 1rem;
+    }
+}
+
+/*Media query below is for desktop.*//*
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: larger;
+    }
+    
+    body, section {
+    width: auto;
+    max-width: 900px;
+    }
+    
+    #navbar {
+        width: 100%;
+        max-width: 900px;
+    }
+    
+    .projectsFlex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .project-tile {
+        width: 50%;
+    }
+    
+    
+    #welcome-section, #about-me, #projects, #contact {
+        padding: 2rem;
+    }
+    
+} */ 
