@@ -55,7 +55,7 @@
             </div>
         </nav> -->
 
-        <nav id="navSection" class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <nav id="navSection" class="navbar navbar-light navbar-expand-sm sticky-top">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,9 +63,9 @@
                 <div class="collapse navbar-collapse" id="myTogglerNav">
                     <!--To contain what we want to collapse-->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="navLi nav-item"><a class="nav-link" href="#about-me">About</a></li>
+                        <li class="navLi nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="navLi nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                     <!--navbar-->
                 </div>
@@ -77,15 +77,17 @@
 
 
 
+
+
         <section id="welcome-section" class="row justify-content-center">
             <!--Row for the welcome section-->
             <div id="welcomeDiv" class="container">
-                <p class="welcomeName row justify-content-center" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                <p class="welcomeName row justify-content-center">
                     Bienvenidos!</p>
-                <h1 id="welcomeName" class="welcomeName row justify-content-center" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                <h1 id="welcomeName" class="welcomeName row justify-content-center">
                     Ver&#0243;nica</h1>
-                <p class="welcomeName row justify-content-center" onmouseover="mouseOver()" onmouseout="mouseOut()">
-                    Welcome to my portfolio.</p>
+                <p class="welcomeName row justify-content-center">
+                    Welcome to my portfolio</p>
             </div>
         </section> <!-- End of welcome section -->
 
@@ -110,66 +112,77 @@
                 <h2>Ver&#0243;nica's Projects</h2>
                 <p>These are some of my favorite projects.</p>
             </div>
+
             <div class="projectsFlex card-group row justify-content-center">
 
-                <div class="project-tile col-6 card">
-                    <div class="card-body">
-                        <h3 class="card-title">Table Tennis</h3>
-                        <h4 class="card-subtitle">Made with HTML/JS</h4>
-                        <a class="card-link" href="https://vjones2112.github.io/tennisgame/" target="_blank">
-                            <img class="img-fluid card-img" src="/images/tableTennis.png" alt="Snapshot of table tennis page">
+                <div class="row text-center">
+                    <div class="project-tile col-sm-6">
+                        <div class="">
+                            <h3 class="">Table Tennis</h3>
+                            <h4 class="">HTML/JS</h4>
+                            <a class="" href="https://vjones2112.github.io/tennisgame/" target="_blank">
+                                <img class="img-fluid " src="/images/tableTennis.png" alt="Snapshot of table tennis page">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-tile col-sm-6">
+                        <div class="">
+                            <h3>Tribute Page</h3>
+                            <h4>HTML/CSS</h4>
+                            <a href="https://codepen.io/veronica2112/pen/dyGWbPG" target="_blank">
+                                <img class="img-fluid" src="images/tributepage.PNG" alt="Snapshot of tribute page to Rumi">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row text-center">
+                    <div class="project-tile col-sm-6">
+                        <h3>Product Landing Page</h3>
+                        <h4>HTML/CSS</h4>
+                        <a href="https://productlandingpage-fcc-git-master.vjones2112.vercel.app/" target="_blank">
+                            <img class="img-fluid" src="images/productlandingpage.PNG" alt="Snapshot of Hook&Needle product landing page">
+                        </a>
+                    </div>
+
+                    <div class="project-tile col-sm-6">
+                        <h3>Technical Documentation Page</h3>
+                        <h4>HTML/CSS</h4>
+                        <a href="https://technicaldocpage-fcc-git-master.vjones2112.vercel.app/" target="_blank">
+                            <img class="img-fluid" src="images/technicaldocumentationpage.PNG" alt="Snapshot of Excel for Teachers technical documentation page">
                         </a>
                     </div>
                 </div>
 
-                <div class="project-tile col-6 card">
-                    <div class="card-body">
-                        <h3>Tribute Page</h3>
-                        <h4>Made with HTML/CSS</h4>
-                        <a href="https://codepen.io/veronica2112/pen/dyGWbPG" target="_blank">
-                            <img class="img-fluid" src="images/tributepage.PNG" alt="Snapshot of tribute page to Rumi">
+                <div class="row text-center">
+                    <div class="project-tile col-sm-6">
+                        <h3>21</h3>
+                        <h4>HTML/CSS/JS</h4>
+                        <a href="https://twentyone-five.vercel.app/" target="_blank">
+                            <img class="img-fluid" src="images/21.PNG" alt="Snapshot of game site for 21">
+                        </a>
+                    </div>
+
+                    <div class="project-tile col-sm-6">
+                        <h3>Random Quote Generator</h3>
+                        <h4>HTML/CSS/JS/jquery/Bootstrap</h4>
+                        <a href="https://vjones2112.github.io/randomquotegenerator/?fbclid=IwAR1I4ksjlP_yYPmfXfBTTDcCkWmj6Km2CnGRhAI2Szv36mn0NT7aEDS-1eM" target="_blank">
+                            <img class="img-fluid" src="/images/randomquotegenerator.PNG" alt="Snapshot of Random Quote Generator pages">
                         </a>
                     </div>
                 </div>
 
-                <div class="project-tile col-6">
-                    <h3>Product Landing Page</h3>
-                    <h4>Made with HTML/CSS</h4>
-                    <a href="https://productlandingpage-fcc-git-master.vjones2112.vercel.app/" target="_blank">
-                        <img class="img-fluid" src="images/productlandingpage.PNG" alt="Snapshot of Hook&Needle product landing page">
-                    </a>
-                </div>
-
-                <div class="project-tile col-6">
-                    <h3>Technical Documentation Page</h3>
-                    <h4>Made with HTML/CSS</h4>
-                    <a href="https://technicaldocpage-fcc-git-master.vjones2112.vercel.app/" target="_blank">
-                        <img class="img-fluid" src="images/technicaldocumentationpage.PNG" alt="Snapshot of Excel for Teachers technical documentation page">
-                    </a>
-                </div>
-
-                <div class="project-tile col-6">
-                    <h3>21</h3>
-                    <h4>Made with HTML/CSS/JS</h4>
-                    <a href="https://twentyone-five.vercel.app/" target="_blank">
-                        <img class="img-fluid" src="images/21.PNG" alt="Snapshot of game site for 21">
-                    </a>
-                </div>
-
-                <div class="project-tile col-6">
-                    <h3>Random Quote Generator</h3>
-                    <h4>Made with HTML/CSS/JS/jquery/Bootstrap</h4>
-                    <a href="https://vjones2112.github.io/randomquotegenerator/?fbclid=IwAR1I4ksjlP_yYPmfXfBTTDcCkWmj6Km2CnGRhAI2Szv36mn0NT7aEDS-1eM" target="_blank">
-                        <img class="img-fluid" src="" alt="Snapshot of Random Quote Generator pages">
-                    </a>
-                </div>
-
-                <div class="project-tile col-6">
-                    <h3>Scribble</h3>
-                    <h4>Made with HTML/CSS/JS/</h4>
-                    <a href="https://scribbled.vercel.app/" target="_blank">
-                        <img class="img-fluid" src="images/scribble.PNG" alt="Snapshot of Scribble page">
-                    </a>
+                <div class="row text-center">
+                    <div class="project-tile col-sm-6">
+                        <h3>Scribble</h3>
+                        <h4>HTML/CSS/JS/</h4>
+                        <a href="https://scribbled.vercel.app/" target="_blank">
+                            <img class="img-fluid" src="images/scribble.PNG" alt="Snapshot of Scribble page">
+                        </a>
+                    </div>
                 </div>
 
             </div> <!-- End of projects row -->
@@ -179,7 +192,7 @@
         <section id="contact" class="row justify-content-center">
             <div class="container">
                 <h2 class="row justify-content-center">Contact Ver&#0243;nica</h2>
-                <p class="row justify-content-center">You can fill out <a href="https://forms.gle/7uiYwURZ5wHdfVXD6" target="_blank" class="orange"> this Google form </a> to reach me or visit any of my contact links below!</p>
+                <p class="row justify-content-center">You can fill out &nbsp;<a href="https://forms.gle/7uiYwURZ5wHdfVXD6" target="_blank" class="orange"> this Google form </a>&nbsp; to reach me or visit any of my contact links below!</p>
                 <div class="social-links container">
                     <ul class="list-unstyled social-list d-flex justify-content-center">
                         <li><a href="https://github.com/VJones2112" id="profile-link" target="_blank"><i class="fa fa-github fa-lg grow" aria-hidden="true"></i></a></li>
@@ -192,12 +205,13 @@
         </section> <!-- End of contact section -->
 
         <footer id="footerSection" class="container">
-            <h6 class="fauxFooter row justify-content-center">Challenge by <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage" target="_blank">freeCodeCamp</a> | Coded by <a href="https://github.com/VJones2112" target="_blank"><img id="initLogo" src="/images/1.png">
+            <h6 class="fauxFooter row justify-content-center"><a href="https://github.com/VJones2112" target="_blank"><img id="initLogo" src="/images/1.png">
                 </a></h6>
+            <h6 class="year row justify-content-center">2021</h6>
 
             <h6 class="row justify-content-center">Today is &nbsp;<span id="date"></span></h6>
 
-            <!-- <span>Photo by <a href="https://unsplash.com/@amyjoyhumphries?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Amy Humphries</a> on <a href="https://unsplash.com/s/photos/minimal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+            <!-- <span>Photo by <a href="https://unsplash.com/@impatrickt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Patrick Tomasso</a> on <a href="https://unsplash.com/s/photos/abstract-clean?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
         </footer> <!-- End of footer -->
 
         <!-- </div> -->
