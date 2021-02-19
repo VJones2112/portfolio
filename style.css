@@ -36,7 +36,7 @@ nav, #welcomeDiv, #about-me, .projectsFlex, footer, #contact{
     /* margin: auto; */
 }
 #initLogo {
-    width: 50px;
+    width: 30px;
     border: 1px solid black;
     border-radius: 50%;
     margin-top: -.7rem;
@@ -58,13 +58,17 @@ h1, h2, .year {
     font-family: 'Hachi Maru Pop', cursive;
 }
 
+.grow {
+    transition: all .3s ease-in-out;
+}
+.fa:hover {
+    color:rgb(223, 146, 4);
+    transform: scale(1.2);
+}
 
-
-
-
-
-
-
+#initLogo:hover {
+    transform: scale(1.2);
+}
 
 
 
@@ -336,3 +340,26 @@ h6, span {
     }
     
 } */ 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 544px) {
+    h1 {font-size: 1.5rem;}
+    h2 {font-size: 1.25rem;}
+    h3, h4 {font-size: 1.05rem;}
+
+}
+
+/* @media (max-width: 768px) {  
+    h1 {font-size:2rem;}
+    h2 {font-size: 1.25rem;}
+    h3, h4 {font-size: 1.05rem;}
+  } */

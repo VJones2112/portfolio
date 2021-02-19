@@ -16,3 +16,4 @@ function mouseOut() {
         x[i].style.color = '#EA8C55';
     }
 }
+
